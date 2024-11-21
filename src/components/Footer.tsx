@@ -13,7 +13,6 @@ import {
   Send,
   ArrowUp,
 } from "lucide-react";
-import Image from "next/image";
 import Logo from "./Logo";
 
 const Footer = () => {
