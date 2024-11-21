@@ -46,7 +46,7 @@ const Footer = () => {
       ctx.fill();
     };
 
-    let stars = Array.from({ length: 100 }, () => ({
+    const stars = Array.from({ length: 100 }, () => ({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
       size: Math.random() * 2,
@@ -151,24 +151,22 @@ const Footer = () => {
           >
             <h3 className="text-xl font-bold mb-6">Quick Links</h3>
             <ul className="space-y-3">
-              {["About", "Services", "Projects", "Contact"].map(
-                (item, index) => (
-                  <motion.li
-                    key={item}
-                    whileHover={{ x: 5 }}
-                    className={
-                      theme === "dark" ? "text-gray-400" : "text-gray-600"
-                    }
+              {["About", "Services", "Projects", "Contact"].map((item) => (
+                <motion.li
+                  key={item}
+                  whileHover={{ x: 5 }}
+                  className={
+                    theme === "dark" ? "text-gray-400" : "text-gray-600"
+                  }
+                >
+                  <a
+                    href={`#${item.toLowerCase()}`}
+                    className="hover:underline"
                   >
-                    <a
-                      href={`#${item.toLowerCase()}`}
-                      className="hover:underline"
-                    >
-                      {item}
-                    </a>
-                  </motion.li>
-                )
-              )}
+                    {item}
+                  </a>
+                </motion.li>
+              ))}
             </ul>
           </motion.div>
 
