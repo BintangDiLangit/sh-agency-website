@@ -185,7 +185,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2 text-gray-400">
                 <Mail size={16} />
-                <span>info@digital.agency</span>
+                <span>info@shdigital.agency</span>
               </li>
               <li className="flex items-center gap-2 text-gray-400">
                 <Phone size={16} />
