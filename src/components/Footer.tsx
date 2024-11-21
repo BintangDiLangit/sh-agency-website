@@ -18,9 +18,6 @@ import Logo from "./Logo";
 const Footer = () => {
   const { theme } = useTheme();
   const ref = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll();
-
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   // Scroll to top function
   const scrollToTop = () => {
