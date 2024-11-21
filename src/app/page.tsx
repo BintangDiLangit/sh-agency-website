@@ -1,5 +1,4 @@
 import Header from "@/components/Header";
-import Hero from "@/components/Hero";
 import Services from "@/components/Service";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Mission from "@/components/Mission";
